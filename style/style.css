@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: hsl(36, 100%, 99%);
+    margin: 0 21px 28px 0px;
+    overflow-x: hidden;
+}
+
+
+.container {
+    width: 1110px;
+    height: auto;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.container header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 89px 0px 55px;
+}
+
+.container header img {
+    width: 65px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.container header nav {
+    width: auto;
+    height: auto;
+}
+
+.container header nav ul {
+    gap: 30px;
+    display: flex;
+}
+
+.container header nav ul li {
+    list-style: none;
+}
+
+.container header nav ul li a {
+    color: hsl(236, 13%, 42%);
+    font-size: 15px;
+    font-weight: 300;
+    text-align: start;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.container header nav ul li a:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+/* Main */
+.container-future {
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0px 0px 71px;
+    justify-content: space-between;
+}
+
+.container-future main {
+    gap: 10px;
+    width: 730px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-future main .img-figure {
+    width: 100%;
+    height: auto;
+}
+
+.img-figure img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.description-future {
+    width: 100%;
+    height: 175px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.description-future h1 {
+    color: hsl(240, 100%, 5%);
+    font-size: 56px;
+    font-weight: 700;
+    text-align: start;
+    width: 365px;
+    line-height: 1;
+}
+
+.description-future .more {
+    width: 365px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.description-future .more p {
+    color: hsl(236, 13%, 42%);
+    font-size: 14.7px;
+    font-weight: 300;
+    text-align: start;
+}
+
+.description-future .more a {
+    width: 50%;
+    color: hsl(36, 100%, 99%);
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3 ease;
+    background-color: hsl(5, 85%, 63%);
+    border: 1px solid transparent;
+    padding: 13px;
+    letter-spacing: 3.375px;
+}
+
+.container-future aside {
+    width: 350px;
+    height: auto;
+    display: flex;
+    padding: 24px;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: hsl(240, 100%, 5%);
+}
+
+.container-future aside h1 {
+    color: hsl(35, 77%, 62%);
+    font-size: 40px;
+    font-weight: 600;
+    text-align: start;
+    margin: 0px 0px 10px;
+}
+
+.container-future aside .card {
+    width: 100%;
+    height: 112px;
+    margin: 0px 0px 10px;
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+
+.container-future aside .card h3 {
+    color: hsl(36, 100%, 99%);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: start;
+    padding: 0px 0px 7px;
+}
+
+.container-future aside .card p {
+    color: hsl(36, 100%, 99%);
+    font-size: 14.7px;
+    font-weight: 500;
+    text-align: start;
+}
+
+/* Footer */
+.container footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container footer .container-footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px 30px;
+}
+
+.content {
+    gap: 20px;
+    widows: 356px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-footer .content img {
+    width: 100px;
+    height: 127px;
+}
+
+.container-footer .description-content {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-footer .description-content h3 {
+    color: #C5C6CE;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: start;
+}
+
+.container-footer .description-content h4 {
+    color: hsl(240, 100%, 5%);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: start;
+    margin: 0px 0px 12px;
+}
+
+.container-footer .description-content p {
+    color: hsl(236, 13%, 42%);
+    font-size: 16px;
+    font-weight: 300;
+    text-align: start;
+}
