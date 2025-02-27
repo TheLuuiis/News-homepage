@@ -247,3 +247,126 @@ body {
     font-weight: 300;
     text-align: start;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: auto;
+    }
+
+    .container-future {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .container-future main {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        margin: 0px 0px 200px;
+    }
+
+    .img-figure {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-figure img {
+        width: 90%;
+    }
+
+    .description-future {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .description-future h1 {
+        font-size: 66px;
+        width: 600px;
+        text-align: center;
+        margin: 0px 0px 15px;
+    }
+
+    .description-future .more {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .description-future .more p {
+        font-size: 16px;
+        text-align: center;
+        max-width: 500px;
+        margin: 0px 0px 28px;
+    }
+
+    .container-future aside {
+        width: 80%;
+    }
+
+    /* Footer */
+    .container footer {
+        width: 100%;
+        height: auto;
+    }
+
+    .container footer .container-footer {
+        gap: 20px;
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container footer .container-footer .top {
+        width: 583.81px;
+        height: auto;
+        display: flex;
+        justify-content: start;
+    }
+
+    
+    .container footer .container-footer .end {
+        width: 583.81px;
+        height: auto;
+        display: flex;
+        justify-content: start;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .description-intro {
+        width: 100%;
+        height: auto;
+    }
+
+    .description-intro h1 {
+        font-size: 32px;
+    }
+
+    .description-intro p {
+        font-size: 15px;
+    }
+}
