@@ -18,7 +18,6 @@ body {
     overflow-x: hidden;
 }
 
-
 .container {
     width: 1110px;
     height: auto;
@@ -70,6 +69,39 @@ body {
 .container header nav ul li a:hover {
     color: hsl(5, 85%, 63%);
 }
+
+/* Hamburger menu styles */
+.menu-icons {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 3; 
+  }
+  
+  .menu-icon-open,
+  .menu-icon-close {
+    cursor: pointer;
+  }
+  
+  .menu-icon-close {
+    position: relative; 
+    right: 20px; 
+    top: -40px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
 
 /* Main */
 .container-future {
@@ -250,6 +282,51 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+
+    .container header {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .container header img {
+        position: relative;
+        left: 25px;
+      }
+      
+      .menu-icons {
+        display: block;
+        position: relative;
+        right: 55px;
+      }
+      
+      .container header nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100vh;
+        background-color: hsl(36, 100%, 99%);
+        padding: 120px 24px 0;
+        z-index: 2;
+        transition: transform 0.3s ease;
+      }
+      
+      .container header nav.mobile-nav-open {
+        display: block;
+      }
+      
+      .container header nav ul {
+        flex-direction: column;
+        gap: 24px;
+      }
+      
+      .container header nav ul li a {
+        font-size: 18px;
+      }
+
     .container {
         width: 100%;
         height: auto;
@@ -351,22 +428,136 @@ body {
 
 @media (max-width: 480px) {
 
-    header {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
+    .container header {
+        position: relative;
+        z-index: 2;
+      }
+      
+      .menu-icons {
+        display: block;
+      }
+      
+      .container header nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100vh;
+        background-color: hsl(36, 100%, 99%);
+        padding: 120px 24px 0;
+        z-index: 2;
+        transition: transform 0.3s ease;
+      }
+      
+      .container header nav.mobile-nav-open {
+        display: block;
+      }
+      
+      .container header nav ul {
+        flex-direction: column;
+        gap: 24px;
+      }
+      
+      .container header nav ul li a {
+        font-size: 18px;
+      }
 
-    .description-intro {
+    .container {
         width: 100%;
         height: auto;
     }
 
-    .description-intro h1 {
-        font-size: 32px;
+    .container header {
+        width: 100%;
     }
 
-    .description-intro p {
+    .container header nav {
+        display: none;
+    }
+
+    .container-future {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .img-figure {
+        width: 100%;
+    }
+
+    .img-figure img {
+        width: 100%;
+        content: url(../assets/images/image-web-3-mobile.jpg);
+    }
+
+    .description-future h1 {
+        font-size: 46px;
+    }
+
+    .description-future .more p {
         font-size: 15px;
+    }
+
+    .description-future .more a {
+        width: 50%;
+        padding: 9px;
+    }
+
+    .container-footer {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 320px ) {
+
+    .container {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-figure {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-figure img {
+        width: 100%;
+    }
+
+    .description-future h1 {
+        font-size: 27px;
+    }
+    
+    .more {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: start;
+    }
+
+    .description-future .more p {
+        font-size: 13px;
+        text-align: start;
+    }
+
+    .description-future .more A {
+        margin-right: auto;
+    }
+
+    .container-future main {
+        margin: 0px 0px 100px;
+    }
+
+    .container-future aside {
+        width: 100%;
+    }
+    
+    .container-future aside .card {
+        margin-bottom: 30px;
+    }
+
+    footer p {
+        font-size: 13px;
+        text-align: center;
     }
 }

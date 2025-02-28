@@ -16,8 +16,12 @@
   <body>
     <!-- Container -->  
     <div class="container">
-      <header>
+      <header class="header">
         <img src="./assets/images/logo.svg" alt="logo">
+        <div class="menu-icons">
+          <img src="./assets/images/icon-menu.svg" alt="Open menu" class="menu-icon-open">
+          <img src="./assets/images/icon-menu-close.svg" alt="Close menu" class="menu-icon-close hidden">
+        </div>
         <nav>
           <ul>
             <li><a href="#">Home</a></li>
@@ -30,7 +34,7 @@
       </header>
       <!-- Main -->
       <div class="container-future">
-        <main>
+        <main class="main">
           <div class="img-figure">
             <img src="./assets/images/image-web-3-desktop.jpg" alt="">
           </div>
@@ -44,7 +48,7 @@
             </div>
           </div>
         </main>
-        <aside>
+        <aside class="aside">
           <h1>New</h1>
           <div class="card">
             <h3>Hydrogen VS Electric Cars</h3>
@@ -66,7 +70,7 @@
           </div>
         </aside>
       </div>  
-      <footer>
+      <footer class="footer">
         <div class="container-footer">
           <div class="content">
             <img src="./assets/images/image-retro-pcs.jpg" alt="retro">
@@ -104,6 +108,9 @@
         </p>
       </footer>
     </div>
+
+    <!-- ScrollReveal  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
   </body>
 
 </html>
